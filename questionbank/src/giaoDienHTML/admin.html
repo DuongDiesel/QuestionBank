@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-3">Quản lí User</h1>
+            <p class="lead">Jumbo helper text</p>
+            <hr class="my-2">
+            
+        </div>
+    </div>
+    <div class="searchForm">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <div class="btn-group">
+                            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Nhập từ khóa">
+                            <div class="btn btn-info">Tìm</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <hr/>
+                </div>
+                <div class="col-9">
+                    <table class="table table-striped table-inverse table-responsive">
+                        <thead class="thead-inverse">
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên User</th>
+                                <th>Mật khẩu</th>
+                                <th>Ghi chú</th>
+                                <th>Môn</th>
+                                <th>Lớp</th>
+                                <th>Kì</th>                                
+                                <th>Trắc nghiệm</th>
+                                <th>Tự luận</th>
+                                <th>Thao tác</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>Nguyễn Hồng Dương</td>
+                                    <td>291479</td>
+                                    <td>Người nhập câu hỏi</td>
+                                    <td>Toán</td>
+                                    <td>Lớp 1</td>
+                                    <td>Kì 1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="btn btn-warning sua"><i class="fa fa-edit"></i>Sửa</div>
+                                        <div class="btn btn-danger xoa"><i class="fa fa-edit"></i>Xóa</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                    </table>
+                </div>
+                <!-- het col-9 -->
+                <div class="col-3">
+                    <div class="card text-left">
+                        <div class="card border-primary mb-3">
+                            <div class="card-header">Thêm mới/Sửa</div>
+                            <div class="card-body text-primary">                              
+                                <div class="form-group">
+                                    <label for="">Tên User</label>                                
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Nhập tên User">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Mật khẩu</label>                                
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Nhập tên User">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Ghi chú</label>                                
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Nhập tên User">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Môn</label>                                
+                                    <select name="inputMon" id="inputMon" class="custom-select">
+                                        <option selected value="null">Chọn môn</option>
+                                        <option value="1">Tiếng Việt</option>
+                                        <option value="2">Toán</option>
+                                        <option value="3">Tiếng Anh</option>
+                                        <option value="4">Khoa học</option>
+                                        <option value="5">Lịch sử và địa lí</option>
+                                        <option value="6">Tin học</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Lớp</label>                                
+                                    <select class="custom-select" name="inputClass" id="inputClass">
+                                        <option selected>Chọn lớp</option>
+                                        <option value="1">Lớp 1</option>
+                                        <option value="2">Lớp 2</option>
+                                        <option value="3">Lớp 3</option>
+                                        <option value="4">Lớp 4</option>
+                                        <option value="5">Lớp 5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Kì</label>                                
+                                    <select class="custom-select" name="inputSem" id="inputSem">
+                                        <option selected>Chọn kì</option>
+                                        <option value="1">Kì 1</option>
+                                        <option value="2">Kì 2</option>                                
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Số câu trắc nghiệm</label>                                
+                                    <select class="custom-select" name="inputSem" id="inputSem">
+                                        <option selected>Chọn số lượng trắc nghiệm</option>
+                                        <option value="1">1 Câu</option>
+                                        <option value="2">2 Câu</option>
+                                        <option value="3">3 Câu</option>
+                                        <option value="4">4 Câu</option>
+                                        <option value="5">5 Câu</option>
+                                        <option value="6">6 Câu</option>
+                                        <option value="7">7 Câu</option>
+                                        <option value="8">8 Câu</option>
+                                        <option value="9">9 Câu</option>
+                                        <option value="10">10 Câu</option>                                
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Số câu tự luận</label>                                
+                                    <select class="custom-select" name="inputSem" id="inputSem">
+                                        <option selected>Chọn số lượng tự luận</option>
+                                        <option value="1">1 Câu</option>
+                                        <option value="2">2 Câu</option>
+                                        <option value="3">3 Câu</option>
+                                        <option value="4">4 Câu</option>
+                                        <option value="5">5 Câu</option>
+                                        <option value="6">6 Câu</option>
+                                        <option value="7">7 Câu</option>
+                                        <option value="8">8 Câu</option>
+                                        <option value="9">9 Câu</option>
+                                        <option value="10">10 Câu</option>                                
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                   <button class="btn btn-block btn-primary">Xác nhận</button>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <!-- het col3 -->
+                
+            </div>
+        </div>
+    </div>
+    <!-- end searchform -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -14,7 +14,7 @@
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
               aria-expanded="false" aria-label="Toggle navigation"></button>
-          <div class="collapse navbar-collapse justly-content-end" id="collapsibleNavId">
+          <div class="collapse navbar-collapse justly-content-end mb-4" id="collapsibleNavId">
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li class="nav-item active">
                       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -36,10 +36,135 @@
               </form>
           </div>
       </nav>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <div id="questionList" role="tablist" aria-multiselectable="true">
+
+                      <div class="card">
+                          <div class="card-header" role="tab" id="question1">
+                              <h5 class="mb-0">
+                                  <a data-toggle="collapse" data-parent="#questionList" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                            Cau hoi ngay 31/1
+                          </a>
+                              </h5>
+                          </div>
+                          <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                              <div class="card-body">
+                                  Section 1 content
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="card">
+                          <div class="card-header" role="tab" id="section2HeaderId">
+                              <h5 class="mb-0">
+                                  <a data-toggle="collapse" data-parent="#questionList" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId">
+                            Section 2
+                          </a>
+                              </h5>
+                          </div>
+                          <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                              <div class="card-body">
+                                  Section 2 content
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="col-4">
+                  <h3>nhap thong tin cau hoi</h3>
+
+                  <div class="form-group">
+                    <label for="inputYear">Nhập năm học</label>
+                    <input type="text" class="form-control" name="inputYear" id="inputYear" aria-describedby="helpIdInputYear" placeholder="2019">
+                    <small id="helpIdInputYear" class="form-text text-muted">Nhập năm học</small>
+                  </div>                
+                                    
+                    <form>
+                        <div class="form-group">
+                            <label for="inputClass"></label>
+                            <select class="custom-select" name="inputClass" id="inputClass">
+                                <option selected>Chọn lớp</option>
+                                <option value="1">Lớp 1</option>
+                                <option value="2">Lớp 2</option>
+                                <option value="3">Lớp 3</option>
+                                <option value="4">Lớp 4</option>
+                                <option value="5">Lớp 5</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputSem"></label>
+                            <select class="custom-select" name="inputSem" id="inputSem">
+                                <option selected>Chọn kì</option>
+                                <option value="1">Kì 1</option>
+                                <option value="2">Kì 2</option>                                
+                            </select>
+                        </div>
+
+                        <select name="inputMon" id="inputMon" class="custom-select">
+                            <option selected value="null">Chọn môn</option>
+                            <option value="1">Tiếng Việt</option>
+                            <option value="2">Toán</option>
+                            <option value="3">Tiếng Anh</option>
+                            <option value="4">Khoa học</option>
+                            <option value="5">Lịch sử và địa lí</option>
+                            <option value="6">Tin học</option>
+                      </select>
+                   </form>
+
+                   <form class="container p-3 my-3 bg-primary text-white">
+                       <div >
+                        <h1>Câu trắc nghiệm</h1>
+                        <div class="container-lg">
+                            <textarea id="mainText" placeholder="Nhập câu hỏi vào đây ..."></textarea>
+                            <textarea id="mainText" placeholder="Nhập lựa chọn số 1 ..."></textarea>
+                            <textarea id="mainText" placeholder="Nhập lựa chọn số 2 ..."></textarea>
+                            <textarea id="mainText" placeholder="Nhập lựa chọn số 3 ..."></textarea>
+                            <textarea id="mainText" placeholder="Nhập lựa chọn số 4 ..."></textarea>
+                            <textarea id="mainText" placeholder="Nhập đáp án ..."></textarea>
+                        </div>
+                        <h1>Chọn độ khó</h1>
+                        <select id="lever" class="custom-select">
+                            <option value="0">Chọn độ khó:</option>
+                            <option value="1">Mức 1</option>
+                            <option value="2">Mức 2</option>
+                            <option value="3">Mức 3</option>
+                            <option value="4">Mức 4</option>
+                            <option value="5">Mức 5</option>	  
+                        </select>		
+                       </div>
+                   </form>
+
+                   <form class="container p-3 my-3 bg-primary text-white">
+                    <div >
+                        <h1>Câu tự luận</h1>
+                            <textarea id="mainText" placeholder="Nhập câu hỏi vào đây ..."></textarea>
+                            <textarea id="mainText" placeholder="Nhập đáp án vào đây ..."></textarea>
+                        <h1>Chọn độ khó</h1>
+                        <select id="lever" class="custom-select">
+                            <option value="0">Chọn độ khó:</option>
+                            <option value="1">Mức 1</option>
+                            <option value="2">Mức 2</option>
+                            <option value="3">Mức 3</option>
+                            <option value="4">Mức 4</option>
+                            <option value="5">Mức 5</option>	  
+                        </select>
+                        <button type="button" class="btn btn-dark">Click</button>		
+                    </div>
+                   </form>
+
+              </div>
+          </div><!-- end row -->
+      </div><!-- end container -->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
