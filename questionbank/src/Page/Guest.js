@@ -23,8 +23,9 @@ export default class Guest extends Component {
                     <TopMenu/>
                     <Header/>
                     <div className="container">
-                        <div className="row pt-5">
+                        <div className="form-group">
                         
+                        <Tuluan getData={(item) => this.addData(item)}/>
                         <Tuluan getData={(item) => this.addData(item)}/>
                         <Tracnghiem getData={(item) => this.addData(item)}/>
                         </div>
