@@ -6,8 +6,8 @@ export class Header extends Component {
             <header className="masthead text-center text-white">
             <div className="masthead-content">
               <div className="container">
-                <h1 className="masthead-heading mb-0">One Page Wonder</h1>
-                <h2 className="masthead-subheading mb-0">Will Rock Your Socks Off</h2>
+                <h1 className="masthead-heading mb-0">Trang quản lí của hiệu trưởng</h1>
+                <h2 className="masthead-subheading mb-0">Quản lí câu hỏi</h2>
                 <a href="#" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
               </div>
             </div>
